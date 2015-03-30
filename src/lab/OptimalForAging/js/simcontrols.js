@@ -140,30 +140,11 @@ function incr(){
 function runFN()
 {
 	document.getElementById("runBtn").disabled = true;
-	if ( $.browser.mozilla == true){
-		
-		$('.HW').slider({ 
-			disabled: true,
-		 });
-		$('.AW').slider({ 
-			disabled: true,
-		 });
-		$('.FRC').slider({ 
-			disabled: true,
-		 });
-		$('.END').slider({ 
-			disabled: true,
-		 });
-		$('.HB').slider({ 
-			disabled: true,
-		 });
-	}else{
-		document.getElementById("HW").disabled= true;
-		document.getElementById("AW").disabled= true;
-		document.getElementById("FRC").disabled= true;
-		document.getElementById("END").disabled= true;
-		document.getElementById("HB").disabled= true;
-	}
+	document.getElementById("HW").disabled= true;
+	document.getElementById("AW").disabled= true;
+	document.getElementById("FRC").disabled= true;
+	document.getElementById("END").disabled= true;
+	document.getElementById("HB").disabled= true;
 	Graph_Calculations();
 	
 	for(k=0; k<=count; k++){
@@ -275,39 +256,16 @@ function resetFN(){
 	document.getElementById("FRC").value=5;
 	document.getElementById("END").value=0.05;
 	document.getElementById("HB").value=60;
-	document.getElementById("AB").value=0.0025;
-	
+	document.getElementById("AB").value=0.0025;	
 	document.getElementById("HWrange").innerHTML=1;
 	document.getElementById("AWrange").innerHTML=5;
 	document.getElementById("Frcrange").innerHTML=5;
 	document.getElementById("Endrange").innerHTML=0.05;
 	document.getElementById("HBrange").innerHTML=60;
-	if ( $.browser.mozilla == true){
-		
-		$('.HW').slider({ 
-			disabled: false,
-		 });
-		$('.AW').slider({ 
-			disabled: false,
-		 });
-		$('.FRC').slider({ 
-			disabled: false,
-		 });
-		$('.END').slider({ 
-			disabled: false,
-		 });
-		$('.HB').slider({ 
-			disabled: false,
-		 });
-	}else{
-		document.getElementById("HW").disabled=false;
-		document.getElementById("AW").disabled=false;
-		document.getElementById("FRC").disabled=false;
-		document.getElementById("END").disabled=false;
-		document.getElementById("HB").disabled=false;
-	}
-	
+	document.getElementById("HW").disabled=false;
+	document.getElementById("AW").disabled=false;
+	document.getElementById("FRC").disabled=false;
+	document.getElementById("END").disabled=false;
+	document.getElementById("HB").disabled=false;
 	count=1;	
-	
-	
 }
