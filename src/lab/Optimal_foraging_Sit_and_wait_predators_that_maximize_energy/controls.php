@@ -126,7 +126,7 @@ http://www.amrita.edu/create
 
 <li><h1>Controls<span></span></h1>
 
-<div style="padding:10px 20px;"><input type="button" style="width:70px;" name="plot" value="Plot Graph" onClick="plotGraphFN(this)" id="plot">&nbsp;<input type="button"  style="width:70px;" name="reset" value="Reset" onClick="Resetvalues();window.location.reload();" id="reset"></div>
+<div style="padding:10px 20px;"><input type="button" style="width:70px; font-size:12px;" name="plot" value="Plot Graph" onClick="plotGraphFN(this)" id="plot">&nbsp;<input type="button"  style="width:70px; font-size:12px;" name="reset" value="Reset" onClick="Resetvalues();window.location.reload();" id="reset"></div>
 
 </li>
 
