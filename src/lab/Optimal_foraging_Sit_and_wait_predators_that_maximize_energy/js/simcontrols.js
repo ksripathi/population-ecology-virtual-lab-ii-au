@@ -241,62 +241,6 @@ function draw_graph(tmArray)
 		document.getElementById("SV2").disabled=true;
 		document.getElementById("FR2").disabled=true;
 		document.getElementById("EV2").disabled=true;
-		if ( $.browser.mozilla == true){
-		
-			$('.AP').slider({ 
-				disabled: true,
-			 });
-			$('.SV').slider({ 
-				disabled: true,
-			 });
-			$('.FR').slider({ 
-				disabled: true,
-			 });
-			$('.EV').slider({ 
-				disabled: true,
-			 });
-			$('.AP1').slider({ 
-				disabled: true,
-			 });
-			$('.VE').slider({ 
-				disabled: true,
-			 });
-			$('.SV1').slider({ 
-				disabled: true,
-			 });
-			$('.FR1').slider({ 
-				disabled: true,
-			 });
-			$('.EV1').slider({ 
-				disabled: true,
-			 });
-			$('.AP2').slider({ 
-				disabled: true,
-			 });
-			$('.VE1').slider({ 
-				disabled: true,
-			 });
-			$('.EC').slider({ 
-				disabled: true,
-			 });
-			$('.EB').slider({ 
-				disabled: true,
-			 });
-			$('.FS').slider({ 
-				disabled: true,
-			 });
-			$('.SV2').slider({ 
-				disabled: true,
-			 });
-			$('.FR2').slider({ 
-				disabled: true,
-			 });
-			$('.EV2').slider({ 
-				disabled: true,
-			 });
-			
-			
-		}
 	//alert(tmArray);
 		$.plot($("#GraphArea"), [ { data: tmArray,color: '#1B9EB3'} ],
 		{
@@ -574,62 +518,6 @@ function Resetvalues() {
 	document.getElementById("SV2").disabled=false;
 	document.getElementById("FR2").disabled=false;
 	document.getElementById("EV2").disabled=false;
-	if ( $.browser.mozilla == true){
-		
-			$('.AP').slider({ 
-				disabled: false,
-			 });
-			$('.SV').slider({ 
-				disabled: false,
-			 });
-			$('.FR').slider({ 
-				disabled: false,
-			 });
-			$('.EV').slider({ 
-				disabled: false,
-			 });
-			$('.AP1').slider({ 
-				disabled: false,
-			 });
-			$('.VE').slider({ 
-				disabled: false,
-			 });
-			$('.SV1').slider({ 
-				disabled: false,
-			 });
-			$('.FR1').slider({ 
-				disabled: false,
-			 });
-			$('.EV1').slider({ 
-				disabled: false,
-			 });
-			$('.AP2').slider({ 
-				disabled: false,
-			 });
-			$('.VE1').slider({ 
-				disabled: false,
-			 });
-			$('.EC').slider({ 
-				disabled: false,
-			 });
-			$('.EB').slider({ 
-				disabled: false,
-			 });
-			$('.FS').slider({ 
-				disabled: false,
-			 });
-			$('.SV2').slider({ 
-				disabled: false,
-			 });
-			$('.FR2').slider({ 
-				disabled: false,
-			 });
-			$('.EV2').slider({ 
-				disabled: false,
-			 });
-			
-			
-		}
 	$.plot($("#GraphArea"), [ [] ]);
 	document.getElementById("plot").disabled=false;
 	inpt1=0.01,inpt2=1,inpt3=0.1,inpt4=20,inpt5=0.01,inpt6=1,inpt7=1,inpt8=0.1,inpt9=20,inpt10=0.01,inpt11=1,inpt12=250,inpt13=0.1,inpt14=1,inpt15=1,inpt16=0.1,inpt17=20;
